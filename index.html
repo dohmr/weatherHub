@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container - sm" id="searchDiv">
+        <div class="row">
+            <div class="column">
+                <form id="city-form">
+                    <input type="text" id="city-search">
+                    <input id="add-city" type="submit" value="Check Weather">
+                </form>
+
+            </div> 
+
+        </div>
+        <div class = "row">
+            <div class="column">
+                <div class="list-group">
+                    <button type="button" class="list-group-item list-group-item-action active">
+                      Cras justo odio
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-action">Dapibus ac facilisis in</button>
+                    <button type="button" class="list-group-item list-group-item-action">Morbi leo risus</button>
+                    <button type="button" class="list-group-item list-group-item-action">Porta ac consectetur ac</button>
+                    <button type="button" class="list-group-item list-group-item-action" disabled>Vestibulum at eros</button>
+                  </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container - md" id="weatherDiv">
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <div class="card-body">
+                        <h2>City: <span id="city"></span></h2><img id="weather_image" src="">
+                        <p>Temperature: <span id="temperature"></span></p>
+                        <p>Pressure: <span id="pressure"></span></p>
+                        <p>Humidity: <span id="humidity"></span></p>
+                        <p>Humidity: <span id="humidity"></span></p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="row">
+                    <div class="column">
+                        <h3>5 - Day Forecast</h3>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-body">
+                              This is some text within a card body.
+                            </div>
+                          </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-body">
+                              This is some text within a card body.
+                            </div>
+                          </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-body">
+                              This is some text within a card body.
+                            </div>
+                          </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-body">
+                              This is some text within a card body.
+                            </div>
+                          </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-body">
+                              This is some text within a card body.
+                            </div>
+                          </div>
+                    </div>
+                    
+                </div>
+                
+
+            </div>
+
+        </div>
+    </div>
+   
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <script src="hub.js" class="js"></script>
+</body>
+
+</html>
