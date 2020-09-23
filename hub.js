@@ -15,7 +15,7 @@ $(function () {
   function displayCityInfo(city) {
 
     var queryURL =
-      "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=" + appID + "&units=imperial";
+      "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=" + appID + "&units=imperial";
 
 
 
