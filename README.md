@@ -17,8 +17,11 @@ Deployed app URL, here https://dohmr.github.io/weatherHub/
 Input any City within the search bar. You are also given a few preset options of my choosing. You then submit your choice and are then presented with the current weather and a 5 day forecast! Brilliant!
 
 ## Tools
-Bootstrap framework
-jQuery, javaScript, HTML, CSS
+Bootstrap framework;
+jQuery; javaScript; HTML; CSS;
+
+API used:
+
 https://openweathermap.org/api 
 
 ## Screens
