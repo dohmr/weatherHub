@@ -11,7 +11,7 @@ Repository can be found here https://github.com/dohmr/weatherHub
 
 Deployed app URL, here https://dohmr.github.io/weatherHub/
 
-*seems to be an issue with the app, while using Microsoft Edge. Please use Google Chrome* 
+
 
 ## Usage
 Input any City within the search bar. You are also given a few preset options of my choosing. You then submit your choice and are then presented with the current weather and a 5 day forecast! Brilliant!
