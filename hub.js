@@ -64,13 +64,13 @@ $(function () {
         var d = new Date();
 
 
-        for( var i = 0; i < 5 ; i++){
-        var foreIcon = "https://openweathermap.org/img/w/" + foreResponse.list[i].weather[0].icon + ".png";
-        var foreImg = $("<img>").attr("src", foreIcon);
-        $("#"+[i]+"date").text(d.getMonth()+1 +"/" + d.getDate() + [i]);
-        $("#"+[i]+"icon").empty().append(foreImg);
-        $("#"+[i]+"temp").text(foreResponse.list[i].main.temp + "°");
-        $("#"+[i]+"humid").text(foreResponse.list[i].main.humidity + "%");
+        for (var i = 0; i < 5; i++) {
+          var foreIcon = "https://openweathermap.org/img/w/" + foreResponse.list[i].weather[0].icon + ".png";
+          var foreImg = $("<img>").attr("src", foreIcon);
+          $("#" + [i] + "date").text(d.getMonth() + 1 + "/" + d.getDate() + [i]);
+          $("#" + [i] + "icon").empty().append(foreImg);
+          $("#" + [i] + "temp").text(foreResponse.list[i].main.temp + "°");
+          $("#" + [i] + "humid").text(foreResponse.list[i].main.humidity + "%");
         }
         // $("#uv-index").text(uvData.value);
       });
@@ -90,7 +90,7 @@ $(function () {
 
 
   function renderButtons() {
-    var city = $(this).attr("data-city");
+    // var city = $(this).attr("data-city");
 
     // (this is necessary otherwise you will have repeat buttons)
     $("#buttons-view").empty();
@@ -102,21 +102,28 @@ $(function () {
       a.addClass("city btn btn-outline-primary btn-block");
 
       a.attr("data-city", cities[i]);
-
+ 
       a.text(cities[i]);
 
 
-      $("#buttons-view").prepend(a);
 
+
+      $("#buttons-view").prepend(a);
+      console.log(cities);
     }
   }
+  $()
+
+
 
   //get input from search, store into localStorage
   $("#city-form").on("submit", function (event) {
     event.preventDefault();
 
-    var cityId = $("#city-form").attr("data-city");
+    var cityId = $("#city-form").attr("id");
     var city = $("#city-input").val().trim();
+
+
 
 
     cities.push(city);
@@ -128,7 +135,7 @@ $(function () {
     localStorage.setItem(cityId, city);
     console.log(cityId, city);
     displayCityInfo(city);
-
+    localStorage.getItem("#city-form")
     renderButtons();
   });
 
@@ -137,19 +144,5 @@ $(function () {
 
 
 
-
-
-
-  //******************THINGS TO DO ************************************* */
-  // FORECAST API CALL 
-  // api.openweathermap.org/data/2.5/forecast?q={city name}&appid={API key}
-
-  // UVindex . url api.openweathermap.org/data/2.5/uvi? + lat + lon + apikey
-
-  // use daily planner moment() to create varaiable for 5 day.
-  // also instructor stream 
-
-  // take out preset buttons. keep array for local storage. 
-  //
 
 });
